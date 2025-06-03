@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,11 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--j+xo2$idauiz)@z59-^4zb%_(337n17gu55+sn#ipdf539yx2'
-
+SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = []
 
 
@@ -152,7 +151,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 SITE_URL = 'http://localhost:5173/'
-STRIPE_SECRET_KEY = "sk_test_51RB9vvLTy3mI2ShwP3jrb75rVuBDQui3bvzALV74QvrRU3pMMWe3F7pvxF6R8T4lwQ4y4KmsFRy2BlPidpLnjT2k00lYOwx3AB"
+STRIPE_SECRET_KEY = config("STRIPE_SECRET_KEY")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
