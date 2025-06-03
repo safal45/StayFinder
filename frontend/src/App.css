@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.myBackground{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9dbe067;
+}
+.whiteBox{
+  background-color: rgba(253, 245, 230, 0);
+  /* padding: 20px; */
+  min-width: 300px;
+  height: 70%;
+  width: 25%;
+  border: 1px solid #333;
+}
+.itemBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(253, 245, 230, 0);
+  height: 60px;
+}
+.title{
+  font-size: 30px;
+  color: #333;
+}
+
+.myForm{
+  width: 80%;
+}
+
+#passField input:-webkit-autofill {
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
