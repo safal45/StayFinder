@@ -8,9 +8,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('users.urls')),
     # path('api/auth/',include('knox.urls')),
-    # path('logout/',knox.views.LogoutView.as_view(),name='knox_logout'),
-    # path('logoutall',knox.views.LogoutView.as_view(),name='knox_logoutall'),
+    # path('logout/',knox_views.LogoutView.as_view(),name='knox_logout'),
+    # path('logoutall',knox_views.LogoutView.as_view(),name='knox_logoutall'),
 
-    path('api/password_reset/',include('django_rest_passwordreset.urls',namespace='password_reset')),
+    # path('api/password_reset/',include('django_rest_passwordreset.urls',namespace='password_reset')),
 
 ]

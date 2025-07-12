@@ -7,8 +7,5 @@ router = routers.DefaultRouter()
 router.register('register', RegisterViewset, basename='register')
 router.register('login', LoginViewset, basename='login')
 router.register('users', UserViewset, basename='users')
-router.register(r'products', ProductViewset, basename='products')
-router.register('cart', CartViewSet, basename='cart')
-router.register('cart-items', CartItemViewSet, basename='cartitem')
-
+router.register('listings', ListingViewSet,basename='listing')
 urlpatterns = router.urls

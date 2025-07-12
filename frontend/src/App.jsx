@@ -14,6 +14,7 @@ import PasswordResetRequest from './components/PasswordResetRequest'
 import PasswordReset from './components/PasswordReset'
 import Profile from './components/Profile'
 import Cart from './components/Cart'
+import Listing from './components/Listing'
 
 
 
@@ -43,9 +44,9 @@ function App() {
               <Route element={<ProtectedRoutes />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/cart" element={<Cart />} />
-                  <Route path="/contactus" element={<Contactus />} />
-                  <Route path='/user/profile' element={<Profile />} />
-                  
+                <Route path="/contactus" element={<Contactus />} />
+                <Route path="/user/profile" element={<Profile />} />
+                <Route path="/listing" element={<Listing/>} />
               </Route>
             </Routes>
           }

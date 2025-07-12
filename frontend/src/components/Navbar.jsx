@@ -6,10 +6,10 @@ function Navbar(props) {
      const { content } = props;
     return (
       <>
-    <div className="h-14 flex items-center bg-amber-300 justify-between">
+    <div className="h-14 flex items-center bg-gray-50 border-sm shadow-md justify-between">
       <div className="">
         <h1 className="text-3xl ml-9">
-          <Link to={"/home"}>FlipShot</Link>
+          <Link to={"/home"}>Stay Finder</Link>
         </h1>
         {/* <h2 className=" ml-10 text-sm">Enjoy the Service, Own the World</h2> */}
       </div>
@@ -21,7 +21,7 @@ function Navbar(props) {
         </div>
         <div className="w-auto h-9 flex justify-center items-center ">
           <Link to={"/cart"}>
-            <a className="mr-5">My Cart</a>
+            <a className="mr-5">My Bookings</a>
           </Link>
         </div>
         <div className="w-auto h-9 flex justify-center items-center ">
